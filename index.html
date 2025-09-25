@@ -117,7 +117,7 @@
             e.preventDefault();
             const pass = passwordInput.value.trim();
             // Solo acepta "yofray es un mmg" sin importar mayúsculas/minúsculas en la Y
-            if (/^yofray es un mmg$/i.test(pass)) {
+            if (/^Yofray me ama mucho$/i.test(pass)) {
                 loginContainer.style.display = 'none';
                 mainContent.style.display = 'flex';
                 // Ajusta el tamaño y comienza la animación SOLO después de mostrar el canvas
@@ -362,16 +362,17 @@
 
         // Mensajes personalizados para cada cuadro
         const mensajes = [
-            "Hola monita, sabes por que eres especial para  mi?",
-            "Eres especial por que me demostraste que aun puedo confiar en alguien.",
-            "Quiero que sepas que siempre voy a estar para ti.",
+            "Hola mi amor, sabes por que eres especial para  mi?",
+            "Eres especial por que apareciste en mi vida cuando menos esperaba alguien como tu.",
+            "Te amo, te amare y nos amaremos por siempre.",
             "Sin importar...",
             "La distancia o el tiempo",
             "Siempre voy a estar para ti.",
-            "Te quiero mucho, monita.",
+            "Te amo mucho, amorcito.",
             "Aunque no lo creas...",
-            "Aunque no te bañes...",
-            "Te quiero"
+            "Aunque tal vez aveces no lo demuestre...",
+            "Te amo Sule, mi sule, mi vida, mi todo.",
+            "Yofray te ama mucho."
         ];
 
         btn.addEventListener('click', function() {
@@ -380,7 +381,7 @@
         });
 
         function showModalRepeatedly() {
-            if (showCount < 10) {
+            if (showCount < 11) {
                 // Cambia el mensaje según el número de cuadro
                 modalMessage.textContent = mensajes[showCount] || "¡Hola! Este cuadro se cerrará automáticamente.";
                 modal.style.display = 'flex';
@@ -393,5 +394,4 @@
         }
     </script>
 </body>
-
 </html>
